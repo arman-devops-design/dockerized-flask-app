@@ -1,0 +1,254 @@
+StatusCode        : 200
+StatusDescription : OK
+Content           : Hello! My Flask application is running inside Docker.
+RawContent        : HTTP/1.1 200 OK
+                    Connection: close
+                    Content-Length: 53
+                    Content-Type: text/html; charset=utf-8
+                    Date: Tue, 25 Aug 2026 15:59:58 GMT
+                    Server: Werkzeug/3.1.8 Python/3.12.14
+                    
+                    Hello! My Flask applicatio...
+Forms             : {}
+Headers           : {[Connection, close], [Content-Length, 53], [Content-Type, text/html; charset=utf-8], [Date, Tue, 25 Aug 2026 15:59:58 
+                    GMT]...}
+Images            : {}
+InputFields       : {}
+Links             : {}
+ParsedHtml        : mshtml.HTMLDocumentClass
+RawContentLength  : 53
+
+
+
+PS C:\Users\Arman Gupta\dockerized-flask-app> docker inspect flask-app
+[
+    {
+        "Id": "d501bbab4d3ae02db7b1a48cd9020807c7ea59b6948a75db9e43e72d52ab3120",
+        "Created": "2026-08-25T15:54:38.242662986Z",
+        "Path": "python",
+        "Args": [
+            "app.py"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 657,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-08-25T15:54:38.594687259Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:963b02bf7d23792d6563c9d06daf400cc3a3a703b00bc8ef04574d3d7168d32d",
+        "ResolvConfPath": "/var/lib/docker/containers/d501bbab4d3ae02db7b1a48cd9020807c7ea59b6948a75db9e43e72d52ab3120/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/d501bbab4d3ae02db7b1a48cd9020807c7ea59b6948a75db9e43e72d52ab3120/hostname",
+        "HostsPath": "/var/lib/docker/containers/d501bbab4d3ae02db7b1a48cd9020807c7ea59b6948a75db9e43e72d52ab3120/hosts",
+        "LogPath": "/var/lib/docker/containers/d501bbab4d3ae02db7b1a48cd9020807c7ea59b6948a75db9e43e72d52ab3120/d501bbab4d3ae02db7b1a48cd9020807c7ea59b6948a75db9e43e72d52ab3120-json.log",
+        "Name": "/flask-app",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "bridge",
+            "PortBindings": {
+                "5000/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "5000"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                12,
+                140
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": [],
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": null,
+            "Name": ""
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "d501bbab4d3a",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "5000/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LANG=C.UTF-8",
+                "GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305",
+                "PYTHON_VERSION=3.12.14",
+                "PYTHON_SHA256=5c8462af5790baf43a321a1559dbe0db06d1be4300fb85fb53c40060668e548a"
+            ],
+            "Cmd": [
+                "python",
+                "app.py"
+            ],
+            "Image": "dockerized-flask-app",
+            "Volumes": null,
+            "WorkingDir": "/app",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {},
+            "StopTimeout": 1
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "722cf4b12b52f7e3b5b73874841af15b09e49c01f9183a3102daafa833e56927",
+            "SandboxKey": "/var/run/docker/netns/722cf4b12b52",
+            "Ports": {
+                "5000/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "5000"
+                    },
+                    {
+                        "HostIp": "::",
+                        "HostPort": "5000"
+                    }
+                ]
+            },
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "MacAddress": "02:80:a7:55:6b:3a",
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "88d9765eba74e8209d1b91130d2eaf8165edc68a4bc5ef588a5368c0aa175a8d",
+                    "EndpointID": "b9f9ff38aaa58718686c8b3e665248631cda3d6c9b1aa6f8c80849d50083c4ec",
+                    "Gateway": "172.17.0.1",
+                    "IPAddress": "172.17.0.2",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": null
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:c088acc2bc108acb79f11da470d5589a9c9551630aa172af06fa7b80fb87476c",
+            "size": 1810,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    }
+]
